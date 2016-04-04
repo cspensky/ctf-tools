@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+[ -e ropper ] || git clone --depth 1 https://github.com/sashs/Ropper.git ropper
+
+pip install capstone filebytes
+pip install -e ropper
